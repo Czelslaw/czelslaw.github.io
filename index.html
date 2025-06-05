@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cioran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/5107074798.js" crossorigin="anonymous" async></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class = "navbar"> 
+        <img src="images/LogoCioran.png" alt="LogoCioran" id = "placeholder-logo">
+        <h2 id = "nav-title">Cioran</h2>
+        <nav>
+            <ul class="sidebar">
+                <a href="#"><li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li></a>
+              <a href="#whoami">  <li   class = "navbarli"><i class="fa-solid fa-person navbar-logo"></i>Qui suis-je ?</li></a>
+                <a href="#"> <li  class = "navbarli"><i class="fa-regular fa-pen-to-square navbar-logo"></i>Mes projets</li></a>
+              <a href="#">   <li   class = "navbarli"><i class="fa-solid fa-business-time navbar-logo"></i>Mes offres</li></a>
+              <a href="#contact">   <li   class = "navbarli"><i class="fa-solid fa-envelope navbar-logo"></i>Me contacter</li></a>
+            </ul>
+            <ul>
+                
+              <a href="#whoami">  <li   class = "navbarli hiddenMobile"><i class="fa-solid fa-person navbar-logo"></i>Qui suis-je ?</li></a>
+                <a href="#"> <li  class = "navbarli hiddenMobile"><i class="fa-regular fa-pen-to-square navbar-logo"></i>Mes projets</li></a>
+              <a href="#">   <li   class = "navbarli hiddenMobile"><i class="fa-solid fa-business-time navbar-logo"></i>Mes offres</li></a>
+              <a href="#contact">   <li   class = "navbarli hiddenMobile"><i class="fa-solid fa-envelope navbar-logo"></i>Me contacter</li></a>
+              <a href="#" ><li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cioran</h1>
+        <div class="intro">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique orci mi, vitae vulputate dui scelerisque ut. Proin vel libero mattis, dignissim purus in, molestie velit. Donec bibendum a dui in sagittis. Phasellus eget hendrerit orci. Donec feugiat euismod arcu ut blandit. Nullam non purus malesuada, molestie est ac, rutrum erat. Vestibulum molestie libero quis vehicula luctus. Vivamus quis tristique orci. Nam ipsum diam, efficitur et ante eu, tristique tristique sapien. In sit amet mauris lectus. Pellentesque urna eros, scelerisque ultrices congue at, pulvinar fermentum dui.</p>
+        </div>
+        <div class="button">
+            <a href="">Mes offres</a>
+            <a href="">Me contacter</a>
+        </div>
+        <div id = "main-grid">
+          <p>Suspendisse potenti. Cras sodales, diam et cursus luctus, nisi leo.</p>
+          <img src="./images/clair-obscur-1.avif" alt="" class ="maingrid-img">
+          <img src="./images/clair-obscur-2.avif" alt="" class ="maingrid-img">
+          <p id="whoami">Je m'appelle Maxime, ancien manager dans la restauration, passionné par le digital et aujourd’hui créateur de sites web pour les TPE, PME et indépendants.
+
+Après plusieurs années à travailler au plus près des besoins clients, j’ai décidé de mettre mes compétences au service des petites structures qui ont besoin d’un site professionnel, simple et efficace, sans se ruiner ni se perdre dans la technique.<br><br>Mon objectif : vous proposer un site web qui vous ressemble et qui travaille pour vous, 24h/24.</p>
+    
+        </div>
+        <h2 class="category">Mes projets</h2>
+         <div class="banner">
+        <div class="slider" style="--quantity: 3">
+            <div class="item" style="--position: 1"><img src="images/LogoCioran.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/LogoCioran.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/LogoCioran.png" alt=""></div>
+       
+        </div>
+        </div>
+        <p class="desc-project">Nunc lorem ex, aliquam eu lobortis non, porttitor vitae purus. Integer id dui id nunc commodo tristique. Donec ullamcorper porttitor diam condimentum placerat. Pellentesque fringilla est at ex congue imperdiet eu eu diam. Sed eleifend at libero a ultricies. Nulla et leo ex. Morbi eget ante nec lectus facilisis tincidunt sed suscipit nisi. Maecenas pharetra efficitur placerat. Curabitur at accumsan nunc, ut condimentum purus. Aenean vel velit egestas, tempus mi et, posuere erat. Mauris vitae viverra turpis. Praesent risus quam, condimentum malesuada tincidunt non, venenatis sit amet ex.</p>
+        <h2 class="category" id="contact">Me contacter</h2>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/appoB0MjJqgm5bCSN/pag54aG9hj5d0sUgt/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </main>
+    <footer>
+        <p>Lorem Ipsum</p>
+    </footer>
+    <script async>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+            sidebar.style.display = sidebar.classList.contains('active') ? 'flex' : 'none';
+            
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.remove('active');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
