@@ -1,0 +1,11 @@
+Code couleur :
+       Primary Eerie black : 23231A
+       Secondary Claret : 6D1A36
+       Ash gray : 9DA9A0
+       Texte : Fff8e7
+       Tea rose : FFCCC9
+       black bckgrnd :  181c14
+
+Fonts : 
+Titres/ parties importantes : Fira Code
+Texte : Playfair Display
