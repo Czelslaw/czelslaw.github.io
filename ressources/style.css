@@ -75,7 +75,6 @@ header a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: 5rem;
 }
 #hero::before {
     content: "";
@@ -97,7 +96,7 @@ header a {
 #hero h1 {
     font-size: 4rem;
     color: #Fff8e7;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5rem;
     z-index: 100;
     font-family: "Playfair Display", serif;
     transition: all 1s ease;
@@ -105,14 +104,14 @@ header a {
 #hero h3 {
     font-size: 2rem;
     color: #Fff8e7;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     z-index: 100;
     font-family: "Playfair Display", serif;
 }
 #hero p {
     font-size: 1.2rem;
     color: #Fff8e7;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     z-index: 100;
 }
 /* cta button styles */
@@ -169,7 +168,7 @@ background: linear-gradient(90deg, rgba(35, 35, 26, 1) 0%, rgba(157, 169, 160, 1
     max-width: 70vw;
     margin: 0 auto;
     text-align: center;
-    margin-top: 120vh;
+    margin-top: 10vh;
     line-height: 2rem;
     border-radius: 10px;
     background-color: #181c14;
@@ -354,8 +353,8 @@ background: linear-gradient(90deg, rgba(35, 35, 26, 1) 0%, rgba(157, 169, 160, 1
 
 @keyframes colors {
   0% { background-color: #5a5a5a;}
-  50% { background-color: #3a3;}
-  100% { background-color: #6a6a6a;}
+  50% { background-color: #6D1A36;}
+  100% { background-color: #6D1A36;}
 }
 
 #cta {
@@ -457,7 +456,7 @@ background: linear-gradient(90deg, rgba(35, 35, 26, 1) 0%, rgba(157, 169, 160, 1
 
 .offer-details {
     width: 40vw;
-    height: 50vh;
+    height: 60vh;
     padding: 2rem;
     border-radius: 10px;
     margin: 0 10vw 0 10vw;
@@ -561,7 +560,6 @@ nav {
 .offer-details {
     width: 100%;
     max-width: 500px;
-    height: auto;
     margin: 1rem auto;
 }
 
@@ -626,10 +624,14 @@ img {
     }
     #hero h1 {
         font-size: 3rem;
-        line-height: 3.5rem;
+        line-height: 2rem;
     }
     #hero h3 {
         font-size: 1.5rem;
+        line-height: normal;
+    }
+    #hero p {
+        font-size: 1rem;
     }
     #hero-content {
         padding: 1rem;
@@ -678,12 +680,12 @@ img {
     }
     
     #offers {
-        flex-direction: column;
         align-items: center;
     }
     .offer-details {
-        width: 95vw;
+        width: 90vw;
         max-width: 95vw;
+        height: auto;
     }
     #about {
         flex-direction: column;
@@ -711,17 +713,18 @@ img {
     }
     #hero h1 {
         font-size: 2.2rem;
-        line-height: 2.5rem;
+        line-height: 1rem;
     }
     #hero h3 {
         font-size: 1.2rem;
     }
     #hero-content {
+        margin-top: 5vh;
         padding: 1rem;
         max-width: 98vw;
         margin-bottom: 5vh;
     }
-    #presentation, #features ul, #testimonials, #about, #projects, .offer-details {
+    #presentation, #features ul, #testimonials, #about, #projects {
         max-width: 98vw;
         padding: 1rem;
         margin: 1rem auto;
@@ -735,12 +738,11 @@ img {
         padding: 1rem;
     }
     #offers {
-        flex-direction: column;
         padding: 1rem;
         height: auto;
     }
     .offer-details {
-        width: 98vw;
+        width: 90vw;
         padding: 1rem;
         margin: 1rem 0;
     }
