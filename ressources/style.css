@@ -1,0 +1,753 @@
+html {
+    font-family: "Fira Code", monospace;
+    color: #FFF8e7;
+    background-color: #23231A;
+    line-height: 1.6;
+}
+body, html {
+    overflow-x: hidden;
+}
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+#menu-button {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;;
+}
+.logo {
+    width: 5rem;
+    height: 5rem;
+    padding-left: 27vw;
+}
+header li {
+    list-style: none;
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: #FFF8e7;
+    padding: 0.5rem 1rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#left-nav {
+    padding-right: 2vw;
+}
+
+#hero {
+    background-image: url("./images/rain-bckgrnd.jpeg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 5rem;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+    max-width: 70vw;
+    text-align: center;
+    margin-bottom: 15vh;
+}
+#hero h1 {
+    font-size: 4rem;
+    color: #Fff8e7;
+    margin-bottom: 0.5rem;
+    z-index: 100;
+    font-family: "Playfair Display", serif;
+    transition: all 1s ease;
+}
+#hero h3 {
+    font-size: 2rem;
+    color: #Fff8e7;
+    margin-bottom: 1rem;
+    z-index: 100;
+    font-family: "Playfair Display", serif;
+}
+#hero p {
+    font-size: 1.2rem;
+    color: #Fff8e7;
+    margin-bottom: 1.5rem;
+    z-index: 100;
+}
+/* cta button styles */
+ .cta-button {
+    background: #23231A;
+background: linear-gradient(90deg, rgba(35, 35, 26, 1) 0%, rgba(157, 169, 160, 1) 100%);
+    color: #FFF8e7;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    height: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline;
+    z-index: 100;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+ .cta-button span {
+   z-index: 500;
+    position: relative;
+}
+ .cta-button:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: #6D1A36;
+    transition: all 0.8s ease;
+}
+ .cta-button:hover {
+    color: #23231A;
+}
+ .cta-button:hover:after {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#hero-content h1:hover {
+    letter-spacing: 2rem;
+    transform: scale(1.5);
+    
+}
+
+#presentation {
+    padding: 2rem;
+    max-width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120vh;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+}
+#presentation h3 {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 5rem;
+    font-family: "Playfair Display", serif;
+}
+
+#features ul{
+    padding: 2rem;
+    max-width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5vh;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: no-wrap;
+    height: 35vh;
+}
+#features li {
+    list-style: none;
+    padding: 0 3rem; ;
+}
+#features h3 {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+#features p {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#features ul li {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1rem;
+}
+#features {
+    margin-top: 20vh;
+}
+#features .feature-image {
+    width: 15vw;
+    height: 20vh;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: #181c14 0px 0px 10px 0px;
+}
+
+#testimonials {
+    padding: 2rem;
+    max-width: 70vw;
+    text-align: center;
+    margin-top: 10vh;
+    margin-left : auto;
+    margin-right: auto;
+    margin-bottom: 15vh;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+#testimonials h3 {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+}
+#testimonials p {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.bar {
+    position: relative;
+    height: 8px;
+    background: #6a6a6a;
+    width:  0%;
+    top: 0px;
+    left: 18px;
+    margin-top: 8px;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    box-shadow: 0 0 3px rgba(192,192,192,0.9);
+    animation: fill 5s infinite alternate, colors 5s infinite alternate;
+    
+}
+
+.bar.fill1 {
+  animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+   animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill3 {
+   animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill4 {
+   animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+   animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+   animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+
+@keyframes fill {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 105px; }
+}
+
+@keyframes fill-1 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 20px;}
+  100% { width: 130px; }
+}
+
+@keyframes fill-2 {
+  0%   { width: 0; }
+  33%  { width: 90px;}
+  66%  { width: 70px;}
+  100% { width: 136px; }
+}
+
+@keyframes fill-3 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 24px;}
+  100% { width: 109px; }
+}
+
+@keyframes fill-4 {
+  0%   { width: 0; }
+  33%  { width: 98px;}
+  66%  { width: 34px;}
+  100% { width: 99px; }
+}
+
+@keyframes fill-5 {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 148px; }
+}
+
+
+@keyframes fill-6 {
+  0%   { width: 0; }
+  33%  { width: 48px;}
+  66%  { width: 22px;}
+  100% { width: 140px; }
+}
+
+@keyframes colors {
+  0% { background-color: #5a5a5a;}
+  50% { background-color: #3a3;}
+  100% { background-color: #6a6a6a;}
+}
+
+#cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 100vw;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#about {
+    padding: 2rem;
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    column-gap: 10vw;
+    row-gap: 2rem;
+}
+#about h2 {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    line-height: 3rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#about aside {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#about .about-image {
+    width: 40vw;
+    height: 75vh;
+    border-radius: 10px;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#offers-title {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-top: 5vh;
+}
+#offers {
+    padding: 2rem;
+    max-width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("./images/balance.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.offer-details {
+    width: 40vw;
+    height: 50vh;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0 10vw 0 10vw;
+    box-shadow: #181c14 0px 0px 10px 0px;
+     line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+    border: #6D1A36 2px solid;
+    margin-bottom: 15vh;
+}
+
+#projects {
+    padding: 2rem;
+    max-width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #181c14;
+    box-shadow: #181c14 0px 0px 10px 0px;
+}
+#projects h3 {
+    font-size: 2.5rem;
+    color: #FFF8e7;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+}
+#projects p {
+    font-size: 1.2rem;
+    color: #FFF8e7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+/* Adaptation aux autres formats d'écrans */
+/* ...existing code... */
+
+/* Ajout : amélioration de la responsivité globale */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header et navigation */
+header, nav {
+    width: 100vw;
+    box-sizing: border-box;
+}
+nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin: 0 1rem;
+}
+
+/* Hero section */
+#hero {
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    padding-top: 6rem;
+    box-sizing: border-box;
+}
+#hero-content {
+    max-width: 95vw;
+    padding: 1rem;
+    margin-bottom: 5vh;
+}
+
+/* Features section */
+#features ul {
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: auto;
+}
+#features .feature-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+/* Offers section */
+#offers {
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem;
+}
+.offer-details {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+/* About section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 98vw;
+    padding: 1rem;
+}
+#about .about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Testimonials section */
+#testimonials {
+    flex-direction: column;
+    max-width: 98vw;
+    padding: 1rem;
+}
+
+/* CTA section */
+#cta {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 98vw;
+}
+
+/* Projects section */
+#projects {
+    max-width: 98vw;
+    padding: 1rem;
+}
+
+img {
+     max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media queries pour petits écrans */
+@media (max-width: 990px) {
+    html {
+        font-size: 16px;
+    }
+    header {
+        padding: 0.5rem;
+    }
+    .logo {
+        width: 4rem;
+        height: 4rem;
+    }
+    header a {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.5rem;
+    }
+    #hero h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    #hero h3 {
+        font-size: 1.5rem;
+    }
+    #hero-content {
+        padding: 1rem;
+        max-width: 90vw;
+        margin-bottom: 5vh;
+    }
+}
+@media (max-width: 900px) {
+    nav, header {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.5rem;
+        align-items: cneter !important;
+    }
+    .hiddenMobile {
+        display: none;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .sidebar li {
+        margin: 1rem 0;
+        
+    }
+    .sidebar a {
+        font-size: 1.5rem;
+        color: #FFF8e7;
+        padding: 0.5rem 1rem;
+    }
+    #menu-button {
+        display: block;
+        font-size: 1.5rem;
+        color: #FFF8e7;
+        padding: 0.5rem;
+    }
+    .logo {
+        margin: 0.5rem 0;
+    }
+    #features ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #offers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer-details {
+        width: 95vw;
+        max-width: 95vw;
+    }
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .about-image {
+        max-width: 95vw;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    header {
+        padding: 0.5rem;
+    }
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+    header a {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.5rem;
+    }
+    #hero h1 {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+    #hero h3 {
+        font-size: 1.2rem;
+    }
+    #hero-content {
+        padding: 1rem;
+        max-width: 98vw;
+        margin-bottom: 5vh;
+    }
+    #presentation, #features ul, #testimonials, #about, #projects, .offer-details {
+        max-width: 98vw;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    #features .feature-image {
+        max-width: 98vw;
+        height: auto;
+    }
+    #cta {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #offers {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+    }
+    .offer-details {
+        width: 98vw;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    #about .about-image {
+        width: 98vw;
+        height: auto;
+    }
+}
+
+/* ...existing code... */

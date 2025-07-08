@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création et location de sites web pour artisans & indépendants – Cioran</title>
+<meta name="description" content="Cioran crée des sites web professionnels, sur mesure et accessibles pour artisans, commerçants et indépendants. Haute-Normandie et France. Devis gratuit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/5107074798.js" crossorigin="anonymous" async></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ressources/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                </ul>
+                <img src="./ressources/images/logo.png" alt="logo de Cioran" class="logo">
+                <ul id="left-nav" class="sidebar">
+
+                <li><a href="#about">À propos</li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="#offers">Offres</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="#"><li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li></a>
+            </ul>
+            <ul>
+                <li><a href="#about" class="hiddenMobile">À propos</li>
+                <li><a href="#projects" class="hiddenMobile">Mes projets</a></li>
+                <li><a href="#offers" class="hiddenMobile">Offres</a></li>
+                <li><a href="#contact" class="hiddenMobile">Contact</a></li>
+                 <a href="#" ><li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hero">
+            <div id="hero-content">
+            <h1>Cioran</h1>
+            <h3>Votre site web professionnel, sur mesure, à votre portée.</h3>
+            <p>Artisan, commerçant, indépendant : donnez à votre entreprise la visibilité qu’elle mérite, avec un site adapté à vos besoins et votre budget.</p>
+            <a href="#offers" class ="cta-button"><span>Découvrez nos offres</span></a> <br>
+            <a href="#contact" class="cta-button"><span>Demandez votre devis gratuit</span></a>
+            </div>
+        </div>
+        <div id="presentation">
+            <h3>Aujourd’hui, vos clients vous cherchent… en ligne.</h3>
+            <p>90 % des consommateurs cherchent un professionnel sur internet avant de se déplacer ou d’appeler.
+Sans site web, vous perdez chaque jour des opportunités.
+Chez Cioran, nous vous aidons à franchir le pas facilement, avec une solution adaptée à votre activité et à votre budget.</p>
+        </div>
+        <div id="features">
+            <h3>Un site web pensé pour votre réussite</h3>
+            <p>3 points clés :</p>
+            <ul>
+                <li>
+                    ✅ Sur mesure : conçu selon vos objectifs et votre métier <br><img src="./ressources/images/pic1.jpeg" alt="wireframe d'un site web" class="feature-image">
+                </li>
+                <li>
+                    ✅ Accessible : à l’achat ou en location, sans surprise <br><img src="./ressources/images/pic2.jpeg" alt="balance de prix" class="feature-image">
+                </li>
+                <li>
+                    ✅ Clé-en-main : hébergement, maintenance et référencement inclus <br><img src="./ressources/images/pic3.jpeg" alt="clés d'un site web" class="feature-image">
+                </li>
+            </ul>
+        </div>
+        <div id="testimonials">
+            <div>
+            <h3>Nos engagements</h3>
+            <p>« Grâce à un site sur mesure, j’ai enfin trouvé de nouveaux clients sans exploser mon budget. »<br>
+<em>— Exemple de réussite typique d’un artisan accompagné par Cioran</em></p>
+        </div>
+        <div>
+        <div class="bar fill1"></div>
+        <div class="bar fill2"></div>
+        <div class="bar fill3"></div>
+        <div class="bar fill4"></div>
+        <div class="bar fill1"></div>
+        <div class="bar fill5"></div>
+        <div class="bar fill6"></div>
+        <div class="bar"></div>
+        </div>
+        </div>
+        <div id="cta">
+            <div>
+            <h3>Prêt à être trouvé par vos futurs clients ?</h3>
+            <p>Demandez dès maintenant votre devis gratuit et sans engagement, et donnez vie à votre projet.</p>
+            </div>
+            <a href="" class="cta-button"><span>Je demande mon devis</span></a>
+        </div>
+        <div id="about">
+            <h2>Une entreprise à taille humaine, à votre service</h2>
+            <section>
+            <p>Bonjour et bienvenue chez Cioran.
+Je suis passionné par le web et convaincu que chaque professionnel mérite une présence en ligne qui lui ressemble.
+Mon objectif ? Vous accompagner dans la création d’un site web qui attire des clients, sans vous ruiner, tout en restant simple à gérer.
+Basé en Haute-Normandie, je travaille avec des clients partout en France… et même au-delà.</p>
+            </section>
+            <aside>
+                Avec Cioran, vous bénéficiez d’un interlocuteur unique, à votre écoute, et d’un accompagnement de A à Z.
+            </aside>
+            <img src="./ressources/images/webdev.jpeg" alt="webdev en action" class="about-image">
+        </div>
+        <h2 id="offers-title">Une solution adaptée à chaque besoin… et à chaque budget.</h2>
+        <div id="offers">
+            
+            <section class="offer-details">
+                <h3>Vous voulez être propriétaire de votre site ?</h3>
+                <p>Nous créons votre site web sur mesure, et vous en êtes le propriétaire.
+Vous payez une fois, et le site est à vous.</p>
+<br>
+                <p><em>Inclus : conception, mise en ligne, optimisation SEO de base.</em></p>
+                <br>
+                <p>À partir de [ton prix de départ à compléter]</p>
+                <br>
+                <a href="" class="cta-button"><span>Demandez un devis personnalisé</span></a>
+            </section>
+
+            <section class="offer-details">
+                <h3>Vous préférez lisser votre budget ?</h3>
+                <p>Optez pour la location : un abonnement tout inclus, sans gros investissement initial.</p>
+<br>
+                <p><em>Inclus : création, hébergement, maintenance, mises à jour, support et SEO de base.</em></p>
+                <br>
+                <p>À partir de [ton prix de départ à compléter]</p>
+                <br>
+                <a href="" class="cta-button"><span>Découvrez la location</span></a>
+            </section>
+        </div>
+
+        <div id="projects">
+        <h2>Quelques exemples de nos réalisations</h2>
+        <p>Découvrez des sites web conçus pour des artisans, commerçants et indépendants comme vous.</p>
+    </div>
+    </main>
+    <script src="ressources/script.js" async></script>
+</body>
+</html>
