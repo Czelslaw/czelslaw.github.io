@@ -6,23 +6,104 @@
     <title>Contactez Cioran – Discutons de votre projet web</title>
 <meta name="description" content="Expliquez votre besoin et recevez un devis gratuit sous 24h. Suren accompagne artisans, commerçants et indépendants pour leur visibilité en ligne.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/5107074798.js" crossorigin="anonymous" async></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./ressources/style.css">
 </head>
+ <header>
+        <nav>
+            
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                </ul>
+                <img src="./ressources/images/logo.png" alt="logo de Cioran" class="logo">
+                <ul id="left-nav" class="sidebar">
+
+                <li><a href="index.html#about">À propos</li>
+                <li><a href="index.html#projects">Mes projets</a></li>
+                <li><a href="index.html#offers">Offres</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <a href="#"><li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li></a>
+            </ul>
+            <ul>
+                <li><a href="index.html#about" class="hiddenMobile">À propos</li>
+                <li><a href="index.html#projects" class="hiddenMobile">Mes projets</a></li>
+                <li><a href="index.html#offers" class="hiddenMobile">Offres</a></li>
+                <li><a href="#contact" class="hiddenMobile">Contact</a></li>
+                 <a href="#" ><li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li></a>
+            </ul>
+        </nav>
+    </header>
 <body>
-    <main>
-        <h2>Parlons de votre projet</h2>
-        <h3>Expliquez-moi votre besoin et je reviens vers vous sous 24h avec une proposition claire et adaptée.</h3>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/appoB0MjJqgm5bCSN/pag54aG9hj5d0sUgt/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-        <div id="contact-info">
+    <div id="hero">
+            <div id="hero-content">
+            <h1>Contact</h1>
+            <h3 class="observed">Discutons de votre projet !</h3>
+            <p>Vous avez une idée, une question ou besoin d’un devis ?
+Je suis à votre écoute pour vous aider à concrétiser votre projet web et vous accompagner à chaque étape.</p>
+            </div>
+        </div>
+    <img src="./ressources/images/rainy-imgBG.jpeg" alt="image pluvieuse en fond" class="contact-bg-image">
+    <main id="contact-main">
+        <div class="contact-hero">
+            <div id="contact-hero-content" >
+        <h2 class="observed">Parlons de votre projet</h2>
+        <h3 class="observed">Expliquez-moi votre besoin et je reviens vers vous sous 24h avec une proposition claire et adaptée.</h3>
+        <p>Afin de mieux comprendre vos besoins, n'hésitez pas à remplir le formulaire ci-dessous ou à me joindre par téléphone ou par mail.</p>
+         <div id="contact-info">
             <h3>Vous pouvez aussi me contacter directement :</h3>
-            <!-- Note: penser à mettre l'adresse mail -->
-            <p><strong>Email :</strong> <a href="mailto:"></a></p>
-            <p><strong>Téléphone :</strong> <a href="tel:">06 13 53 56 65</a></p>
+            <!-- Note: penser à mettre en forme cette partie -->
+             <ul id="socials-list">
+            <li><strong>Email :</strong> <a href="mailto:maxime@cioran.fr"> maxime@cioran.fr</a></li>
+            <li><strong>Téléphone :</strong> <a href="tel:+33613535665"> 06 13 53 56 65</a></li>
+            <li><strong>LinkedIn : <i class="fa-brands fa-linkedin"></i> <a href="METTRELINKEDIN"> Cioran</a></strong></li>
+            <li><strong>Instagram : <i class="fa-brands fa-instagram"></i> <a href="METTREINSTA"> Cioran</a></strong></li>
+            </ul>
         </div>
         <p>Basé en Haute-Normandie, je travaille avec vous partout en France… et même à l’étranger.</p>
-    </main>
+        </div>
+        <iframe class="airtable-embed contact-form" src="https://airtable.com/embed/appoB0MjJqgm5bCSN/pag54aG9hj5d0sUgt/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" async></iframe>
+       
     
+        
+        </div>
+    </main>
+        
 </body>
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column brand">
+      <h2>Cioran</h2>
+      <p>Création & Location de sites web pour entrepreneurs, TPE et PME. Votre présence en ligne, simple, efficace et sur-mesure.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#offers">Offre de sites web</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>📧 maxime@cioran.fr</p>
+      <p>📞 +33 6 13 53 56 65</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">X/Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Cioran — Tous droits réservés. <a href="./ressources/documents/Mentions.pdf">Mentions légales</a> | <a href="./ressources/documents/Politique_conf.pdf" target="_blank">Politique de confidentialité</a></p>
+    <p class="credits">Site conçu et développé avec amour par Cioran.</p>
+  </div>
+</footer>
+<script src="./ressources/script.js" async></script>
 </html>

@@ -16,7 +16,7 @@
         <nav>
             
             <ul>
-                <li><a href="#home">Accueil</a></li>
+                <li><a href="./index.html">Accueil</a></li>
                 </ul>
                 <img src="./ressources/images/logo.png" alt="logo de Cioran" class="logo">
                 <ul id="left-nav" class="sidebar">
@@ -24,15 +24,15 @@
                 <li><a href="#about">À propos</li>
                 <li><a href="#projects">Mes projets</a></li>
                 <li><a href="#offers">Offres</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <a href="#"><li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li></a>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li>
             </ul>
             <ul>
                 <li><a href="#about" class="hiddenMobile">À propos</li>
                 <li><a href="#projects" class="hiddenMobile">Mes projets</a></li>
                 <li><a href="#offers" class="hiddenMobile">Offres</a></li>
-                <li><a href="#contact" class="hiddenMobile">Contact</a></li>
-                 <a href="#" ><li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li></a>
+                <li><a href="./contact.html" class="hiddenMobile">Contact</a></li>
+                 <li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li>
             </ul>
         </nav>
     </header>
@@ -46,14 +46,15 @@
             <a href="#contact" class="cta-button"><span>Demandez votre devis gratuit</span></a>
             </div>
         </div>
-        <div id="presentation">
-            <h3>Aujourd’hui, vos clients vous cherchent… en ligne.</h3>
+        <img src="./ressources/images/rainy-imgBG.jpeg" alt="image pluvieuse" class="bg-image">
+        <div id="presentation" class="box">
+            <h3 class="observed">Aujourd’hui, vos clients vous cherchent… en ligne.</h3>
             <p>90 % des consommateurs cherchent un professionnel sur internet avant de se déplacer ou d’appeler.
 Sans site web, vous perdez chaque jour des opportunités.
 Chez Cioran, nous vous aidons à franchir le pas facilement, avec une solution adaptée à votre activité et à votre budget.</p>
         </div>
         <div id="features">
-            <h3>Un site web pensé pour votre réussite</h3>
+            <h3 class="observed">Un site web pensé pour votre réussite</h3>
             <p>3 points clés :</p>
             <ul>
                 <li>
@@ -67,9 +68,9 @@ Chez Cioran, nous vous aidons à franchir le pas facilement, avec une solution a
                 </li>
             </ul>
         </div>
-        <div id="testimonials">
+        <div id="testimonials" class="box">
             <div>
-            <h3>Nos engagements</h3>
+            <h3 class="observed">Nos engagements</h3>
             <p>« Grâce à un site sur mesure, j’ai enfin trouvé de nouveaux clients sans exploser mon budget. »<br>
 <em>— Exemple de réussite typique d’un artisan accompagné par Cioran</em></p>
         </div>
@@ -91,8 +92,8 @@ Chez Cioran, nous vous aidons à franchir le pas facilement, avec une solution a
             </div>
             <a href="" class="cta-button"><span>Je demande mon devis</span></a>
         </div>
-        <div id="about">
-            <h2>Une entreprise à taille humaine, à votre service</h2>
+        <div id="about" class="box">
+            <h2 class="observed">Une entreprise à taille humaine, à votre service</h2>
             <section>
             <p>Bonjour et bienvenue chez Cioran.
 Je suis passionné par le web et convaincu que chaque professionnel mérite une présence en ligne qui lui ressemble.
@@ -105,7 +106,7 @@ Basé en Haute-Normandie, je travaille avec des clients partout en France… et 
             <img src="./ressources/images/webdev.jpeg" alt="webdev en action" class="about-image">
         </div>
         <h2 id="offers-title">Une solution adaptée à chaque besoin… et à chaque budget.</h2>
-        <div id="offers">
+        <div id="offers" >
             
             <section class="offer-details">
                 <h3>Vous voulez être propriétaire de votre site ?</h3>
@@ -114,7 +115,7 @@ Vous payez une fois, et le site est à vous.</p>
 <br>
                 <p><em>Inclus : conception, mise en ligne, optimisation SEO de base.</em></p>
                 <br>
-                <p>À partir de [ton prix de départ à compléter]</p>
+                <p>À partir de 79€ par mois</p>
                 <br>
                 <a href="" class="cta-button"><span>Demandez un devis personnalisé</span></a>
             </section>
@@ -125,17 +126,85 @@ Vous payez une fois, et le site est à vous.</p>
 <br>
                 <p><em>Inclus : création, hébergement, maintenance, mises à jour, support et SEO de base.</em></p>
                 <br>
-                <p>À partir de [ton prix de départ à compléter]</p>
+                <p>À partir de 500€</p>
                 <br>
                 <a href="" class="cta-button"><span>Découvrez la location</span></a>
             </section>
         </div>
 
-        <div id="projects">
-        <h2>Quelques exemples de nos réalisations</h2>
+        <div id="projects" class="box">
+        <h2 class="observed">Quelques exemples de nos réalisations</h2>
         <p>Découvrez des sites web conçus pour des artisans, commerçants et indépendants comme vous.</p>
-    </div>
+        </div>
+        <div class="c">
+<!-- penser à ajouter les autres projets -->
+  <input type="radio" name="a" id="cr-1" checked>
+  <label for="cr-1" style="--hue: 32"></label>
+  <div class="ci" style="--z: 4">
+    <h2 class="ch observed" style="--h: 46; --s: 100%; --l: 50%">Pizza Rush</h2>
+    <img src="./ressources/images/PizzaRush.png" alt="Pizza Rush">
+  </div>
+
+  <input type="radio" name="a" id="cr-2">
+  <label for="cr-2" style="--hue: 82"></label>
+  <div class="ci" style="--z: 3">
+    <h2 class="ch" style="--h: 82; --s: 80%; --l: 90%">Terre Bohème</h2>
+    <img src="./ressources/images/Terre.png" alt="Terre Bohème">
+  </div>
+
+  <input type="radio" name="a" id="cr-3">
+  <label for="cr-3" style="--hue: 40"></label>
+  <div class="ci" style="--z: 2">
+    <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%">In the mountains?</h2>
+    <img src="https://images.unsplash.com/photo-1518805629729-3e55b81b2393?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=700" alt="Mountains and houses">
+  </div>
+
+  <input type="radio" name="a" id="cr-4">
+  <label for="cr-4" style="--hue: 210"></label>
+  <div class="ci" style="--z: 1">
+    <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%">Above looks beautiful?</h2>
+    <img src="https://images.unsplash.com/photo-1488831948116-38bc1351c6d6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=700" alt="Sky and mountains">
+  </div>
+
+</div>
+    
     </main>
-    <script src="ressources/script.js" async></script>
+    
 </body>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column brand">
+      <h2>Cioran</h2>
+      <p>Création & Location de sites web pour entrepreneurs, TPE et PME. Votre présence en ligne, simple, efficace et sur-mesure.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#offers">Offre de sites web</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>📧 maxime@cioran.fr</p>
+      <p>📞 +33 6 13 53 56 65</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">X/Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Cioran — Tous droits réservés. <a href="./ressources/documents/Mentions.pdf">Mentions légales</a> | <a href="./ressources/documents/Politique_conf.pdf" target="_blank">Politique de confidentialité</a></p>
+    <p class="credits">Site conçu et développé avec amour par Cioran.</p>
+  </div>
+</footer>
+
+<script src="ressources/script.js" async></script>
 </html>

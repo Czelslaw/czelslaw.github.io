@@ -7,17 +7,94 @@
 <meta name="description" content="Toutes les réponses aux questions fréquentes sur la création et la location de sites web avec Cioran. Contactez-nous pour plus d’informations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/5107074798.js" crossorigin="anonymous" async></script>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./ressources/style.css">
 </head>
+ <header>
+        <nav>
+            
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                </ul>
+                <img src="./ressources/images/logo.png" alt="logo de Cioran" class="logo">
+                <ul id="left-nav" class="sidebar">
+
+                <li><a href="#about">À propos</li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="#offers">Offres</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <a href="#"><li class="navbarli" onclick=hideSidebar() id="menu-xmark"><i class="fa-solid fa-xmark"></i></li></a>
+            </ul>
+            <ul>
+                <li><a href="#about" class="hiddenMobile">À propos</li>
+                <li><a href="#projects" class="hiddenMobile">Mes projets</a></li>
+                <li><a href="#offers" class="hiddenMobile">Offres</a></li>
+                <li><a href="./contact.html" class="hiddenMobile">Contact</a></li>
+                 <a href="#" ><li class="navbarli" onclick=showSidebar() id="menu-button"><i class="fa-solid fa-bars"></i></li></a>
+            </ul>
+        </nav>
+    </header>
 <body>
-    <h2>Questions fréquentes</h2>
-    <ul><!-- Penser à mettre du JS pour display les réponses -->
-        <li>Combien coûte un site web ?</li>
-        <li>Combien de temps faut-il pour créer un site ?</li>
-        <li>Puis-je modifier moi-même le site une fois terminé ?</li>
-        <li>Et si j’ai besoin d’aide après la mise en ligne ?</li>
+    
+    <main>
+        <div id="hero">
+            <div id="hero-content">
+            <h1>FAQ</h1>
+            <h3>Toutes les réponses à vos questions sur nos sites web</h3>
+            <p>Vous avez des questions sur la création ou la location de sites web ? Consultez notre FAQ pour trouver les réponses aux questions les plus fréquentes.</p>
+            </div>
+        </div>
+        <img src="./ressources/images/rainy-imgBG.jpeg" alt="image pluvieuse" class="bg-image">
+        <div id="faq">
+            <h3 class="observed">Questions fréquentes</h3>
+            <p>Vous vous posez des questions sur nos services ? Voici les réponses aux questions les plus courantes. Si vous ne trouvez pas ce que vous cherchez, n'hésitez pas à nous contacter.</p>
+            <ul class="faq-list">
+    <!-- Penser à mettre du JS pour display les réponses -->
+        <li id="cost">Combien coûte un site web ? <i class="fa-solid fa-caret-down"></i></li>
+        <p class="answer"> Le prix d’un site web dépend de vos besoins, du type de site (vitrine, e-commerce, etc.) et des fonctionnalités souhaitées. Je propose deux formules : la vente (paiement unique) ou la location (abonnement mensuel), pour s’adapter à votre budget et vos objectifs. Contactez-moi pour un devis gratuit et personnalisé</p>
+        <li id="time">Combien de temps faut-il pour créer un site ? <i class="fa-solid fa-caret-down"></i></li>
+        <p class="answer">Le délai moyen est de 1 à 3 semaines pour un site vitrine classique, en fonction de la complexité et de la réactivité dans les échanges. Pour les projets plus élaborés, cela peut prendre plus de temps. Nous définissons ensemble un planning clair dès le début du projet.</p>
+        <li id="modify">Puis-je modifier moi-même le site une fois terminé ? <i class="fa-solid fa-caret-down"></i></li>
+        <p class="answer">Non, les sites que je réalise ne prévoient pas d’interface client pour modifier le contenu directement. En revanche, si vous optez pour la formule en location (abonnement), je m’occupe moi-même des mises à jour et modifications de contenu à votre demande, sans frais supplémentaires.</p>
+        <li id="help">Et si j’ai besoin d’aide après la mise en ligne ? <i class="fa-solid fa-caret-down"></i></li>
+        <p class="answer">Je reste disponible même après la mise en ligne. Si vous choisissez la formule en location, l’assistance et la maintenance sont incluses dans l’abonnement. Si vous avez acheté votre site, je propose aussi des options de maintenance et de support technique à la carte.</p>
     </ul>
-    <script src="./ressources/script.js" async></script>
+    </div>
+    <script src="./ressources/faq-script.js" async></script>
 </body>
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column brand">
+      <h2>Cioran</h2>
+      <p>Création & Location de sites web pour entrepreneurs, TPE et PME. Votre présence en ligne, simple, efficace et sur-mesure.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#offers">Offre de sites web</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>📧 maxime@cioran.fr</p>
+      <p>📞 +33 6 13 53 56 65</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">X/Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Cioran — Tous droits réservés. <a href="./ressources/documents/Mentions.pdf">Mentions légales</a> | <a href="./ressources/documents/Politique_conf.pdf" target="_blank">Politique de confidentialité</a></p>
+    <p class="credits">Site conçu et développé avec amour par Cioran.</p>
+  </div>
+</footer>
 </html>
